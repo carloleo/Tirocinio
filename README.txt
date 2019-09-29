@@ -1,6 +1,6 @@
 Istruzione per l'esecusione del codice:
 
-1) Eseguire CMakelists.txt per genrare il Makefile per la compilazione: da terminale comando cmake CMakelists.txt
+1) Eseguire CMakelists.txt per generare il Makefile per la compilazione: da terminale comando cmake CMakelists.txt
 
 2) Eseguire il Makefile ottenuto per compilare: da terminale comando make 
 
