@@ -52,7 +52,7 @@ typedef struct dlc{
 }dlc;
 
 /*
- * struttura che rappresenta un frame CAN nei sui campi piu' importanti
+ * struttura che rappresenta un frame Extended CAN nei sui campi piu' importanti
  */
 typedef struct can_frame{
     id ID;

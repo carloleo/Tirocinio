@@ -34,7 +34,7 @@ typedef struct param{
  */
 uint64_t toUnit(uint8_t* byteArray);
 /*
- * @brief: dato un intero a 64 bit resituise l'array di 8 byte corrispondente
+ * @brief: dato un intero a 64 bit resituisce l'array di 8 byte corrispondente
  */
 uint8_t* toArray(uint64_t  n);
 /*
@@ -64,11 +64,11 @@ uint64_t gcdExtended(uint64_t   a, uint64_t   b, long long  *x, long long *y);
 
 RSA_param* init(void);
 /*
- * @brief: cifra un messaggio di 8 byte ottendo l' uint64_t corrispondente. Restituisce il crittogramma come un array di 8 byte
+ * @brief: cifra un messaggio di 8 byte ottenendo l' uint64_t corrispondente. Restituisce il crittogramma come un array di 8 byte
  */
 uint8_t *encrypt(uint8_t *m, uint64_t n, uint64_t e);
 /*
- * @brief: decifra un crittogramma di 8 byte ottendo l' uint64_t corrispondente. Retstituisce il messaggio come un array di 8 byte
+ * @brief: decifra un crittogramma di 8 byte ottenendo l' uint64_t corrispondente. Retstituisce il messaggio come un array di 8 byte
  */
 uint8_t* decipher(uint8_t * c,uint64_t n, uint64_t d);
 

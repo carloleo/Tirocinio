@@ -65,7 +65,7 @@ int main() {
 
     ISNULL(generateKey(),symmetric_key,"generate key fail"); //genero la chiave di sessione
 
-    //stampoa video la chiave di sessione generata
+    //stampo a video la chiave di sessione generata
     printKey(symmetric_key);
 
 
@@ -94,7 +94,7 @@ int main() {
 
 
 
-        ISNULL(calloc(1, sizeof(can_frame)),frame_out,"calloc frame fail") //alloco la memoria per il frame can utilizzato per comunicare la chiave di sessione
+        ISNULL(calloc(1, sizeof(can_frame)),frame_out,"calloc frame fail") //alloco la memoria per il frame utilizzato per comunicare la chiave di sessione
         frame_out->ID.value = KEYMASTERID;//setto il campo id del frame 
         frame_out->DLC.value = 15;
         int count = 0;
@@ -147,7 +147,7 @@ uint8_t *generateKey(void) {
         key[i] = (uint8_t) rand();
     }
 
-    // prendo il primi 8
+    // prendo i primi 8
     for (int j = 0; j < SIZEPAYLOAD ; ++j) {
         tmp[j] = key[j];
     }
@@ -173,7 +173,7 @@ uint8_t *generateKey(void) {
     second = num;
     reduced_byte = toArray(num);
     j = 8;
-    //li sostituisco nelle lore posizioni
+    //li sostituisco nelle loro posizioni
     for (int l = 0; l < SIZEPAYLOAD; ++l) {
         key[j] = reduced_byte[l];
         j++;

@@ -1,5 +1,5 @@
 /*
- * Questo file contiene l'implementazione del client, ovvero un modulo del key-manger
+ * Questo file contiene l'implementazione del client, ovvero un modulo del key-manager 
  * per avviare il programma ./Client -i [IP del server]
  */
 
